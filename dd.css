@@ -1,20 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Quiz App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<body>
+/* Background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-<div class="quiz-container">
-    <h2 id="question">Question</h2>
-    <div id="answers"></div>
-    <button id="nextBtn">Next</button>
-    <h3 id="score"></h3>
-</div>
+/* Quiz Card */
+.quiz-container {
+    background: #ffffff;
+    width: 420px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    animation: fadeIn 0.6s ease;
+}
 
-<script src="script.js"></script>
-</body>
-</html>
+/* Question Title */
+#question {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Answer Buttons */
+#answers button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background: #f2f5ff;
+    color: #333;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+#answers button:hover {
+    background: #4facfe;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Next Button */
+#nextBtn {
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #28a745, #5fd068);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Next Button Hover */
+#nextBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Score Text */
+#score {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #444;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
