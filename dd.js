@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Quiz App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dd.css">
 </head>
 
 <body>
@@ -15,6 +15,6 @@
     <h3 id="score"></h3>
 </div>
 
-<script src="script.js"></script>
+<script src="dd.js"></script>
 </body>
 </html>
